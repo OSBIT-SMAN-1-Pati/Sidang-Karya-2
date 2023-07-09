@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #C70039;
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: black;
+}
+header h2 {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    padding: 10px;
+}
+img {
+    width: 50px;
+    position: fixed;
+    display: block;
+    background-attachment: fixed;
+    left: 60px;
+    top: 30px;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: #C70039;
+    color: white;
+}
+.active {
+    background-color: #C70039;
+    color: white;
+}
+.banner {
+    height: 60vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 33, 33, 0.6);
+}
+.banner h2 {
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid white;
+}
+section {
+    padding: 50px 0;
+}
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #C70039;
+    margin-bottom: 20px;
+}
+.about p {
+    color: black;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:#C70039;
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 50%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for the login box */
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  display: none;
+}
+
+.login-box button {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30vh;
+}
+
+/* CSS for the form inside the login box */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: grey;
+}
+
+

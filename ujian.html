@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ujian.css">
+    <title>Ujian</title>
+</head>
+<body>
+    <h1>Bahasa Inggris</h1>
+    <label for="">1. How many days makes a week?</label><br>
+    <input type="radio" name="days" id="option10days"> 10 days <br>
+    <input type="radio" name="days" id="option9days"> 9 days <br>
+    <input type="radio" name="days" id="option8days"> 8 days <br>
+    <input type="radio" name="days" id="option7days"> 7 days <br>
+    <div id="responseDays"></div>
+
+    <label for="">2. How do you call a little cat?</label><br>
+    <input type="radio" name="cat" id="optionlamb"> lamb <br>
+    <input type="radio" name="cat" id="optioncub"> cub <br>
+    <input type="radio" name="cat" id="optionpuppy"> puppy <br>
+    <input type="radio" name="cat" id="optionkitten"> kitten <br>
+    <div id="responseCat"></div>
+
+    <label for="">3. How many kilometers 20.000 meters are?</label><br>
+    <input type="radio" name="meters" id="option2"> 2 <br>
+    <input type="radio" name="meters" id="option20"> 20 <br>
+    <input type="radio" name="meters" id="option200"> 200 <br>
+    <input type="radio" name="meters" id="option2000"> 2000 <br>
+    <div id="responseMeters"></div>
+
+    <label for="">4. What is the day after Saturday?</label><br>
+    <input type="radio" name="saturday" id="optionThursday"> Thursday <br>
+    <input type="radio" name="saturday" id="optionMonday"> Monday <br>
+    <input type="radio" name="saturday" id="optionSunday"> Sunday <br>
+    <input type="radio" name="saturday" id="optionTuesday"> Tuesday <br>
+    <div id="responseSaturday"></div>
+
+    <label for="">5. What is the longest river on earth?</label><br>
+    <input type="radio" name="river" id="optionTheMekong"> The Mekong <br>
+    <input type="radio" name="river" id="optionTheNile"> The Nile <br>
+    <input type="radio" name="river" id="optionTheKapuas"> The Kapuas <br>
+    <input type="radio" name="river" id="optionTheAmazon"> The Amazon <br>
+    <div id="responseRiver"></div>
+
+    <button onclick="kirim()">Kirim</button>
+    <script>
+        function kirim (){
+            //soal nomor 1
+            const option10days = document.querySelector('#option10days')
+            const option9days = document.querySelector('#option9days')
+            const option8days = document.querySelector('#option8days')
+            const option7days = document.querySelector('#option7days')
+            const responseDays = document.querySelector('#responseDays')
+            let answerDays 
+            if(option7days.checked){
+                answerDays = 'Jawaban Benar'
+                responseDays.style ='color: green'
+            }else{
+                answerDays = 'Jawaban Salah'
+                responseDays.style ='color: red'
+            }
+            responseDays.innerHTML = answerDays
+
+            //soal nomor 2
+            const optionlamb = document.querySelector('#optionlamb')
+            const optioncub = document.querySelector('#optioncub')
+            const optionpuppy = document.querySelector('#optionpuppy')
+            const optionkitten = document.querySelector('#optionkitten')
+            const responseCat = document.querySelector('#responseCat')
+            let answerCat
+            if(optionkitten.checked){
+                answerCat = 'Jawaban Benar'
+                responseCat.style ='color: green'
+            }else{
+                answerCat = 'Jawaban Salah'
+                responseCat.style ='color: red'
+            }
+            responseCat.innerHTML = answerCat
+
+            //soal nomor 3
+            const option2 = document.querySelector('#option2')
+            const option20 = document.querySelector('#option20')
+            const option200 = document.querySelector('#option200')
+            const option2000 = document.querySelector('#option2000')
+            const responseMeters = document.querySelector('#responseMeters')
+            let answerMeters
+            if(option20.checked){
+                answerMeters = 'Jawaban Benar'
+                responseMeters.style ='color: green'
+            }else{
+                answerMeters = 'Jawaban Salah'
+                responseMeters.style ='color: red'
+            }
+            responseMeters.innerHTML = answerMeters
+
+            //soal nomor 4
+            const optionThursday = document.querySelector('#optionThursday')
+            const optionMonday = document.querySelector('#optionMonday')
+            const optionSunday = document.querySelector('#optionSunday')
+            const optionTuesday = document.querySelector('#optionTuesday')
+            const responseSaturday = document.querySelector('#responseSaturday')
+            let answerSaturday
+            if(optionSunday.checked){
+                answerSaturday = 'Jawaban Benar'
+                responseSaturday.style ='color: green'
+            }else{
+                answerSaturday = 'Jawaban Salah'
+                responseMeters.style ='color: red'
+            }
+            responseSaturday.innerHTML = answerSaturday
+        
+            //soal nomor 5
+            const optionTheMekong = document.querySelector('#optionTheMekong')
+            const optionTheNile = document.querySelector('#optionTheNile')
+            const optionTheKapuas = document.querySelector('#optionTheKapuas')
+            const optionTheAmazon = document.querySelector('#optionTheAmazon')
+            const responseRiver = document.querySelector('#responseRiver')
+            let answerRiver
+            if(optionTheAmazon.checked){
+                answerRiver = 'Jawaban Benar'
+                responseRiver.style ='color: green'
+            }else{
+                answerRiver = 'Jawaban Salah'
+                responseRiver.style ='color: red'
+            }
+            responseRiver.innerHTML = answerRiver
+        } 
+    </script>
+</body>
+</html>

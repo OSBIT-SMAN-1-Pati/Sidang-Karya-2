@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jurnal Literasi</title>
+    <link rel="stylesheet" href="index3.php">
+	<style>
+		form {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid yellow;
+			border-radius: 5px;
+			background-color: #ff0101;
+		}
+        h3 {
+           text-align: center;
+           margin-bottom: 25px;
+           font-size: 30px;
+        }
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			background-color: black;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		table {
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+            color: black;
+        }
+
+         table th {
+            border: 2px solid black;
+            padding: 7px 17px;
+			text-align: center;
+        }
+
+		 table td{
+			border: 2px solid black;
+            padding: 7px 17px;
+			text-align: justify;
+		 }
+
+         table thead th {
+            background-color: rgb(226, 68, 68);
+            color: white;
+            border-color: black;
+            text-transform: uppercase;
+        }
+
+	</style>
+</head>
+<body>
+    <h3>Jurnal Literasi</h3>
+	<form method="post">
+		<label for="tanggal">Tanggal:</label>
+		<input type="text" id="nama" name="nama" placeholder="tanggal/bulan/tahun  cth:15/12/2006">
+
+        <label for="judul">Judul Buku:</label>
+		<input type="text" id="nama" name="nama" placeholder="Masukkan judul buku">
+
+		<label for="ringkasan">Ringkasan:</label>
+		<input type="text" id="ringkasan" name="ringkasan" placeholder="Masukkan ringkasan buku yang dibaca">
+
+		<input type="submit" value="Submit">
+	</form>
+    <table>
+	<thead>
+        <tr>
+            <th><strong>Tanggal</strong></th>
+            <th><strong>Judul Buku</strong></th>
+            <th><strong>Ringkasan</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5/9/2022</td>
+            <td>Negeri Tirai Bambu</td>
+            <td>Nak, Di manakah bungamu? Jadilah anak yang jujur, karena kejujuran akan mendatangkan kebaikan. Sebaliknya, ketidakkejujuran hanya akan menjerumuskan diri sendiri. Song Jin jujur membawa bunga apa adanya sesuai apa yang ia tanam sehingga ia dapat menjadi penerus kerajaan. Teman temannya yang lain tidak jujur dengan membawa bunga indah, padahal tunas yang diberikan sebenarnya tidak dapat tumbuh.</td>
+        </tr>
+		<tr>
+            <td>6/9/2022</td>
+            <td>Negeri Tirai Bambu</td>
+            <td>Kaisar Kangxi : Hidup Sederhana Dicintai Generasi ke Generasi. Kaisar Kangxi sosok kaisar kedua dari dinasti Qing yang menguasai seluruh Tiongkok. Hidupnya yang sederhana dan apa adanya, dia tidak ingin merubah apa yang sudah ditakdirkan dan menjalankan hidup sesuai petunjuk dan selalu bersyukur.</td>
+        </tr>
+	</tbody>
+	</table>

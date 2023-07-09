@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARUDA-21</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">GARUDA-21</a></h1>
+            <h2>
+                <img src="logogaruda.png" alt="Logo">
+            </h2>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner">
+        <h2>Welcome to GARUDA-21</h2>
+    </section>
+    <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Login Box</title>
+        </head>
+        <body>
+          <button onclick="showLogin()">Login</button>
+          
+        </style>
+      </head>
+      <body>
+        <button onclick="showLogin()">Login</button>
+
+          <div class="login-box" id="login-box">
+            <h2>Login</h2>
+            <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username">
+              
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password">
+              
+              <input type="submit" value="Login">
+            </form>
+            <button onclick="hideLogin()">Close</button>
+          </div>
+          
+          <script>
+            function showLogin() {
+              var loginBox = document.getElementById("login-box");
+              loginBox.style.display = "block";
+            }
+            
+            function hideLogin() {
+              var loginBox = document.getElementById("login-box");
+              loginBox.style.display = "none";
+            }
+          </script>
+        </body>
+        </html>
+</body>

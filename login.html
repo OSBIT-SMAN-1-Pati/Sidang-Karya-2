@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pop-up Login Box Example</title>
+  <style>
+    /* CSS for the login box */
+    .login-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      z-index: 9999;
+      display: none;
+    }
+    
+    /* CSS for the form inside the login box */
+    .login-box form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .login-box label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    
+    .login-box input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .login-box input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showLogin()">Login</button>
+  
+  <div class="login-box" id="login-box">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      
+      <input type="submit" value="Login">
+    </form>
+    <button onclick="hideLogin()">Close</button>
+  </div>
+  
+  <script>
+    function showLogin() {
+      var loginBox = document.getElementById("login-box");
+      loginBox.style.display = "block";
+    }
+    
+    function hideLogin() {
+      var loginBox = document.getElementById("login-box");
+      loginBox.style.display = "none";
+    }
+  </script>
+</body>
+</html>

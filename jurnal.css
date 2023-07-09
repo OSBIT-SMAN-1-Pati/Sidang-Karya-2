@@ -1,0 +1,58 @@
+form {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: relative;
+    margin: auto;
+    color: black;
+}
+
+table th,
+table td {
+    border: 2px solid black;
+    padding: 7px 17px;
+    text-align: center;
+}
+
+table thead th {
+    background-color: red;
+    color: white;
+    border-color: black;
+    text-transform: uppercase;
+}

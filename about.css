@@ -1,0 +1,27 @@
+#h1{
+    display: center;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+#pic{
+display: center;
+}
+#pic img{
+display: flex;
+width: 600px;
+height: 350px;
+}
+#intro{
+display: center;
+flex-direction: column;
+text-align: justify;
+padding: 20px;
+font-size: large;
+font-family: sans-serif;
+}
+#intro h2{
+font-size: 20px;
+align-items: center;
+padding: 20px;
+}
